@@ -1,13 +1,13 @@
 
 
-/* Fitness-Gerätedefinitionen
+/* Fitness-Device-Definitions
  * ==========================
  * Fitness Machine Service:    0x1826
  * Treadmill Data Char:        0x2ACD (Mandatory)
  * FitnessMachine Status Char: 0x2ADA (Optional)
  * Training Status Char:       0x2AD3 (Optional)
  */
-/* Paragon X -- Konfiguration
+/* Paragon X -- Configuration
  * ==========================
  * Unknown Service              0xFFF0
  * Unknown Char:                0xFFF3
