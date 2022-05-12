@@ -7,6 +7,8 @@ Send the init-value = "55aa00000220000000000d0a"
 ## Start-Commands
 The start-values are made up of some fixed, some specific and some random (checksum?) values.<BR>
 ```
+Example:	"55aa000003020e0042ef00000000000000000135000f00000d0a"	<< Start with 5.3km/h and 1.5% incline
+	
 Fixed:  	"55aa000003020e00"
 Random: 	"42ef"	<< This might be a checksum / always the same regarding the speed
 Fixed:		"000000000000000001"
@@ -18,7 +20,19 @@ Fixed:		"00000d0a"
 <BR>
 <details><summary>Table with some Start-Values with special Speed and Incline Values</summary>
 <p>
-sss
+	
+|[km/h]|[%]|HEX-Command|
+|-|-|-|
+|5,3|1,5|55aa000003020e0042ef00000000000000000135000f00000d0a|
+|3|12|55aa000003020e0091560000000000000000011e007800000d0a|
+|6|0|55aa000003020e000f6b0000000000000000013c000000000d0a|
+|7,5|0|55aa000003020e005d110000000000000000014b000000000d0a|
+|8|0|55aa000003020e00f8f900000000000000000150000000000d0a|
+|8,1|0|55aa000003020e00a95300000000000000000151000000000d0a|
+|8,5|0|55aa000003020e00afda00000000000000000155000000000d0a|
+|10|0|55aa000003020e00107c00000000000000000164000000000d0a|
+|12|0|55aa000003020e0061f300000000000000000178000000000d0a|
+
 </p>
 </details>
 ## Stop-Commands
@@ -31,6 +45,8 @@ Using STOP stops the belt and ends the run. The treadmill will go to "reset" the
 The HEX-values are made up of some fixed, some specific and some random (checksum?) values.<BR>
 
 ```
+Example:	"55aa0000030503001c750800010d0a"	<< Set speed to 0.8 km/h
+	
 Fixed:  	"55aa000003050300"
 Random: 	"1c75"	<< This might be a checksum / always the same regarding the speed
 Specific:	"08"	<< This is the speed in HEX (08 ==> 0.8 km/h)
