@@ -1,6 +1,8 @@
 
 # Bluetooth commands to control the "Horizon Paragon X"
-All these values were extracted with a bluetooth dump using the app (advertized by Horizon)
+Because I was not able to send all speed values through the default BLE Fitness-Machine-Protocol, I had to extract these values with a bluetooth dump using the Android app advertized by Horizon.<BR>
+So I found out that this app uses a different Entry-Point: 0xFFF3 instead of 0x1826<BR>
+Therefore all the following commands were sent to 0xFFF3.
 ## Initialization
 Define / set the MTU Size to 103<BR>
 Send the init-value = "55aa00000220000000000d0a"
